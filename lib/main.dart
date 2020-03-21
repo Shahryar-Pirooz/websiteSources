@@ -12,6 +12,7 @@ void main() {
   runApp(MaterialApp(
     title: "Shahryar",
     theme: ThemeData(
+      iconTheme: IconThemeData(color: MyColors.white),
       primarySwatch: MyColors.primary,
     ),
     darkTheme: ThemeData.dark(),
@@ -77,50 +78,58 @@ class MyApp extends StatelessWidget {
         return SafeArea(
           child: Scaffold(
             appBar: AppBar(
-              brightness: Brightness.dark,
-              title: titleText("About me", color: MyColors.white),
-              centerTitle: true,
+              iconTheme: IconThemeData(color: MyColors.white),
+              title: titleText("<-Find me here !", color: MyColors.white),
+              centerTitle: false,
             ),
             drawer: Drawer(
               elevation: 10,
-              child: ListView(
-                children: <Widget>[
-                  RaisedButton.icon(
-                    onPressed: _gitHub,
-                    color: MyColors.primary,
-                    colorBrightness: Brightness.dark,
-                    icon: FaIcon(FontAwesomeIcons.github),
-                    label: Text("Github"),
+              child: Container(
+                color: MyColors.black,
+                child: Center(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      RaisedButton.icon(
+                        onPressed: _gitHub,
+                        color: MyColors.primary,
+                        colorBrightness: Brightness.dark,
+                        icon: FaIcon(FontAwesomeIcons.github),
+                        label: titleText("Github"),
+                      ),
+                      RaisedButton.icon(
+                        onPressed: _gitLab,
+                        color: MyColors.primary,
+                        colorBrightness: Brightness.dark,
+                        icon: FaIcon(FontAwesomeIcons.gitlab),
+                        label: titleText("Gitlab"),
+                      ),
+                      RaisedButton.icon(
+                        onPressed: _linkedIn,
+                        color: MyColors.primary,
+                        colorBrightness: Brightness.dark,
+                        icon: FaIcon(FontAwesomeIcons.linkedin),
+                        label: titleText("Linkedin"),
+                      ),
+                      RaisedButton.icon(
+                        onPressed: _telegram,
+                        color: MyColors.primary,
+                        colorBrightness: Brightness.dark,
+                        icon: FaIcon(FontAwesomeIcons.telegram),
+                        label: titleText("Telegram"),
+                      ),
+                      RaisedButton.icon(
+                        onPressed: _email,
+                        colorBrightness: Brightness.dark,
+                        color: MyColors.primary,
+                        icon: FaIcon(FontAwesomeIcons.envelope),
+                        label: titleText("Email"),
+                      )
+                    ],
                   ),
-                  RaisedButton.icon(
-                    onPressed: _gitLab,
-                    color: MyColors.primary,
-                    colorBrightness: Brightness.dark,
-                    icon: FaIcon(FontAwesomeIcons.gitlab),
-                    label: Text("Gitlab"),
-                  ),
-                  RaisedButton.icon(
-                    onPressed: _linkedIn,
-                    color: MyColors.primary,
-                    colorBrightness: Brightness.dark,
-                    icon: FaIcon(FontAwesomeIcons.linkedin),
-                    label: Text("Linkedin"),
-                  ),
-                  RaisedButton.icon(
-                    onPressed: _telegram,
-                    color: MyColors.primary,
-                    colorBrightness: Brightness.dark,
-                    icon: FaIcon(FontAwesomeIcons.telegram),
-                    label: Text("Telegram"),
-                  ),
-                  RaisedButton.icon(
-                    onPressed: _email,
-                    colorBrightness: Brightness.dark,
-                    color: MyColors.primary,
-                    icon: FaIcon(FontAwesomeIcons.envelope),
-                    label: Text("Email"),
-                  )
-                ],
+                ),
               ),
             ),
             body: FirstPage(),
