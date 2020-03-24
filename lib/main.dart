@@ -1,4 +1,4 @@
-import 'package:about_me/pages/secondpage.dart';
+
 import 'package:about_me/res/colors.dart';
 import 'package:about_me/res/widgets.dart';
 import 'package:flutter/material.dart';
