@@ -77,11 +77,44 @@ class MyApp extends StatelessWidget {
       } else {
         return SafeArea(
           child: Scaffold(
-            appBar: AppBar(
-              iconTheme: IconThemeData(color: MyColors.white),
-              title: titleText("<-Find me here !", color: MyColors.white),
-              centerTitle: false,
-            ),
+            appBar: PreferredSize(
+                child: Stack(children: [
+                  Row(
+                    children: <Widget>[
+                      Flexible(
+                        child: Container(
+                          color: MyColors.white,
+                        ),
+                        flex: 1,
+                      ),
+                      Flexible(
+                        child: Container(
+                          decoration: BoxDecoration(
+                              gradient: LinearGradient(colors: <Color>[
+                            MyColors.primary,
+                            MyColors.primaryDark
+                          ])),
+                        ),
+                        flex: 1,
+                      ),
+                    ],
+                  ),
+                  Builder(
+                    builder: (BuildContext context) {
+                      return FlatButton.icon(
+                        highlightColor: MyColors.primaryDark,
+                        splashColor: MyColors.black,
+                        color: MyColors.primary,
+                        onPressed: () {
+                          Scaffold.of(context).openDrawer();
+                        },
+                        icon: Icon(Icons.alternate_email),
+                        label: Text("Find me here!"),
+                      );
+                    },
+                  ),
+                ]),
+                preferredSize: Size(double.infinity, 50)),
             drawer: Drawer(
               elevation: 10,
               child: Container(
