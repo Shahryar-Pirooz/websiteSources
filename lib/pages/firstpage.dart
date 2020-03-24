@@ -119,7 +119,7 @@ class _FirstPageState extends State<FirstPage> {
               children: <Widget>[
                 Align(
                     alignment: Alignment.centerLeft,
-                    child: titleText("loo", size: 85, color: MyColors.white)),
+                    child: titleText("llo", size: 85, color: MyColors.white)),
                 Row(
                   children: <Widget>[
                     Align(
