@@ -176,7 +176,7 @@ Widget rightSideMobile() {
             children: <Widget>[
               Align(
                   alignment: Alignment.centerLeft,
-                  child: titleText("loo", size: 45, color: MyColors.white)),
+                  child: titleText("llo", size: 45, color: MyColors.white)),
               Row(
                 children: <Widget>[
                   Align(
