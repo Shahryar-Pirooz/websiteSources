@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   role="img"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1713"
+   sodipodi:docname="kotlin.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata1719">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1717">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2331">
+      <stop
+         style="stop-color:#ef8221;stop-opacity:1"
+         offset="0"
+         id="stop2327" />
+      <stop
+         style="stop-color:#ac4ad0;stop-opacity:1"
+         offset="1"
+         id="stop2329" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2323">
+      <stop
+         style="stop-color:#bb6bd9;stop-opacity:1"
+         offset="0"
+         id="stop2319" />
+      <stop
+         style="stop-color:#2f80ed;stop-opacity:1"
+         offset="1"
+         id="stop2321" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2323"
+       id="linearGradient2325"
+       x1="11.852397"
+       y1="0.03795797"
+       x2="0"
+       y2="12.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2331"
+       id="linearGradient2333"
+       x1="23.889589"
+       y1="0.03795797"
+       x2="0"
+       y2="24"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2323"
+       id="linearGradient2341"
+       x1="23.885706"
+       y1="17.926123"
+       x2="1.3824697"
+       y2="18.586246"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1530"
+     inkscape:window-height="845"
+     id="namedview1715"
+     showgrid="false"
+     inkscape:zoom="20.299857"
+     inkscape:cx="9.332913"
+     inkscape:cy="10.992604"
+     inkscape:window-x="70"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1713" />
+  <title
+     id="title1709">Kotlin icon</title>
+  <path
+     d="M1.3 24l11.3-11.5L24 24zM0 0h12L0 12.5zM13.4 0L0 14v10l12-12L24 0z"
+     id="path1711"
+     style="stroke:none;stroke-opacity:1;fill:none;stroke-width:0.05;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     style="mix-blend-mode:normal;fill:url(#linearGradient2325);fill-opacity:1;stroke:none;stroke-width:0.00246307;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 0.07176414,6.171006 V 0.03795797 H 5.9620805 11.852397 l -0.08978,0.11295917 C 11.643112,0.30126765 0.11603214,12.304054 0.09114301,12.304054 c -0.01065838,0 -0.01937887,-2.7598715 -0.01937887,-6.133048 z"
+     id="path2282" />
+  <path
+     style="fill:url(#linearGradient2333);fill-opacity:1;stroke:none;stroke-width:0.00246307;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 0.07249653,18.917401 0.07322891,14.003573 6.7570358,7.0207657 13.440842,0.03795797 h 5.224374 5.224373 L 11.99303,11.934593 C 5.4499227,18.477743 0.09091223,23.831229 0.08411775,23.831229 c -0.0067945,0 -0.01202403,-2.211223 -0.01162122,-4.913828 z"
+     id="path2284" />
+  <path
+     style="fill:url(#linearGradient2341);fill-opacity:1;stroke:none;stroke-width:0.00246307;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 2.7367375,22.612008 c 0.7202799,-0.724758 3.2249082,-3.268495 5.5658407,-5.652749 2.3409328,-2.384253 4.2689128,-4.341023 4.2844008,-4.348378 0.02374,-0.01127 8.09608,8.10487 10.4865,10.543394 l 0.760178,0.775477 H 12.630397 1.4271377 Z"
+     id="path2286" />
+</svg>

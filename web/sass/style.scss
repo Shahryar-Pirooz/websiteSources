@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Quicksand:wght@300&display=swap");
+@import "node_modules/rfs/sass.sass";
+@import "materialize.scss";
+
+// colors
+$backColor: #bdbdbd;
+$black: #333333;
+$green: #27ae60;
+$white: #f2f2f2;
+//fonts
+$titleFont: "Just Another Hand";
+$bodyFont: "Quicksand";
+
+//mixins , ....
+
+@mixin text($isgreen: false, $fontSize: 1rem) {
+  @include font-size($fontSize);
+  position: static;
+  font: {
+    family: $bodyFont;
+    style: normal;
+    weight: normal;
+  }
+  text: {
+    transform: lowercase;
+    align: center;
+  }
+  @if $isgreen == true {
+    color: $green;
+  } @else {
+    color: $black;
+  }
+}
+
+@keyframes blackImage {
+  0% {
+    fill: $black;
+    width: 100%;
+  }
+  100% {
+    fill: $green;
+    width: 110%;
+  }
+}
+
+@keyframes heartIcon {
+  0% {
+    font-size: 100%;
+  }
+  10% {
+    font-size: 110%;
+  }
+  20% {
+    font-size: 105%;
+  }
+  30% {
+    font-size: 110%;
+  }
+  40% {
+    font-size: 100%;
+  }
+  50% {
+    font-size: 110%;
+  }
+  60% {
+    font-size: 105%;
+  }
+  70% {
+    font-size: 110%;
+  }
+  80% {
+    font-size: 100%;
+  }
+  90% {
+    font-size: 110%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
+@keyframes colorImages{
+  0% {
+     filter: grayscale(100%);
+     width: 20%;
+    
+  }
+  100% {
+    filter: grayscale(0%);
+    width: 30%;
+  }
+}
+//
+html,
+body {
+  background-color: $backColor;
+  scroll-behavior: smooth;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  a {
+    @include text(flase, 1rem);
+    &.mainMenu {
+      margin: 10px;
+    }
+    &:hover {
+      @include text(true, 1.1rem);
+    }
+  }
+}
+
+p {
+  @include text(false, 1.6rem);
+  text-align: justify;
+}
+
+i {
+  color: $green;
+}
+//classes
+
+.cover {
+  height: 100%;
+  width: 100%;
+  background-color: $backColor;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mainRow {
+  @include margin-top(7rem);
+  @include margin-bottom(7rem);
+}
+
+.myCard {
+  @extend .card;
+  @include rfs(4rem, border-radius);
+}
+
+.title {
+  @include font-size(10rem);
+
+  text: {
+    align: center;
+    transform: capitalize;
+  }
+  font: {
+    family: $titleFont;
+    style: normal;
+    weight: normal;
+  }
+}
+
+.androidText {
+  @include text(true, 3rem);
+}
+
+.developerText {
+  @include text(flase, 3rem);
+}
+
+.blackImage {
+  margin: 5px;
+  fill: $black;
+  &:hover {
+    animation: {
+      name:blackImage;
+      duration: 1s;
+      fill-mode: forwards;
+    }
+  }
+}
+
+.heartIcon:hover {
+  animation: {
+    name: heartIcon;
+    duration:4s; 
+    fill-mode: forwards;
+  }
+}
+
+.colorImages {
+  filter: grayscale(100%);
+  &:hover {
+    animation: {
+      name: colorImages;
+      duration: 1s;
+      fill-mode: forwards;
+    }
+  }
+}
+///
