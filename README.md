@@ -1,6 +1,6 @@
 # about_me
 
-![]()
+![](src/favicon.png)
 
 Hey there ,
 
