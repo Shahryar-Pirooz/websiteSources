@@ -8181,6 +8181,22 @@ ul a:hover {
   text-align: center;
   color: #27ae60;
 }
+ul a.findMeIcons {
+  font-size: calc(1.425rem + 2.1vw);
+  position: static;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: lowercase;
+  text-align: center;
+  color: #333333;
+  margin-left: 30px;
+}
+@media (min-width: 1200px) {
+  ul a.findMeIcons {
+    font-size: 3rem;
+  }
+}
 
 p {
   font-size: calc(1.285rem + 0.42vw);
@@ -8199,7 +8215,10 @@ p {
   }
 }
 
-i {
+i, em {
+  color: #333333;
+}
+i:hover, em:hover {
   color: #27ae60;
 }
 

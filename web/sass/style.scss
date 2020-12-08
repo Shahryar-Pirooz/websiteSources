@@ -108,7 +108,12 @@ ul {
     &:hover {
       @include text(true, 1.1rem);
     }
+    &.findMeIcons {
+      @include text(false, 3rem);
+      margin-left: 30px;
+    }
   }
+  
 }
 
 p {
@@ -116,8 +121,11 @@ p {
   text-align: justify;
 }
 
-i {
-  color: $green;
+i , em {
+  color: $black;
+  &:hover{
+    color: $green;
+  }
 }
 //classes
 
@@ -196,4 +204,6 @@ i {
     }
   }
 }
+
+
 ///
