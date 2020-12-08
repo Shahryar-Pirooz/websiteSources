@@ -8095,11 +8095,9 @@ input[type=range]::-ms-thumb {
 @keyframes blackImage {
   0% {
     fill: #333333;
-    width: 100%;
   }
   100% {
     fill: #27ae60;
-    width: 110%;
   }
 }
 @keyframes heartIcon {
@@ -8139,14 +8137,24 @@ input[type=range]::-ms-thumb {
 }
 @keyframes colorImages {
   0% {
+    filter: invert(53%) sepia(56%) saturate(546%) hue-rotate(93deg) brightness(93%) contrast(91%);
     filter: grayscale(100%);
-    width: 20%;
   }
   100% {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(0%);
     filter: grayscale(0%);
-    width: 30%;
   }
 }
+::-moz-selection {
+  color: #f2f2f2;
+  background: #27ae60;
+}
+
+::selection {
+  color: #f2f2f2;
+  background: #27ae60;
+}
+
 html,
 body {
   background-color: #bdbdbd;
@@ -8322,7 +8330,7 @@ i:hover, em:hover {
 }
 
 .colorImages {
-  filter: grayscale(100%);
+  filter: invert(53%) sepia(56%) saturate(546%) hue-rotate(93deg) brightness(93%) contrast(91%);
 }
 .colorImages:hover {
   animation-name: colorImages;
