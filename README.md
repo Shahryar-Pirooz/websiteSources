@@ -16,6 +16,6 @@ You can see the result at this [link](https://github.com/Shahryar-Pirooz/shahrya
 
 screen shots:
 
-![](/home/shahryar/Projects/Web/websiteSources/screenshots/screely-1607412667574.png)
+![](screenshots/screely-1607412667574.png)
 
-![](/home/shahryar/Projects/Web/websiteSources/screenshots/screely-1607412737601.png)
+![](screenshots/screely-1607412737601.png)
