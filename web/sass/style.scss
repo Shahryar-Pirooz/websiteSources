@@ -5,8 +5,11 @@
 // colors
 $backColor: #bdbdbd;
 $black: #333333;
-$green: #27ae60;
+$green: $primary-color;
 $white: #f2f2f2;
+$pink: $secondary-color;
+// change defailt
+
 //fonts
 $titleFont: "Just Another Hand";
 $bodyFont: "Quicksand";
@@ -78,12 +81,10 @@ $bodyFont: "Quicksand";
 }
 @keyframes colorImages{
   0% {
-    filter: invert(53%) sepia(56%) saturate(546%) hue-rotate(93deg) brightness(93%) contrast(91%);
-    filter: grayscale(100%);
+    filter: opacity(80%);
   }
   100% {
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(0%);
-    filter: grayscale(0%);
+    filter: opacity(100%)
   }
 }
 //
@@ -134,8 +135,31 @@ i , em {
   }
 }
 //classes
-
+.myNav {
+  @extend .nav-wrapper;
+  &ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    a {
+      @include text(flase, 1rem);
+      &.mainMenu {
+        margin: 10px;
+      }
+      &:hover {
+        @include text(false, 1rem);
+      }
+    }
+    
+  }
+}
+.myLogo {
+@extend .brand-logo;
+margin-left: 16px;
+margin-right: 16px;
+}
 .cover {
+  margin-bottom: auto;
   height: 100%;
   width: 100%;
   background-color: $backColor;
@@ -143,7 +167,7 @@ i , em {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
+  position: static;
   top: 0;
   left: 0;
 }
@@ -201,7 +225,7 @@ i , em {
 }
 
 .colorImages {
-  filter: invert(53%) sepia(56%) saturate(546%) hue-rotate(93deg) brightness(93%) contrast(91%);
+  filter: opacity(80%);
   &:hover {
     animation: {
       name: colorImages;
@@ -210,6 +234,4 @@ i , em {
     }
   }
 }
-
-
 ///
