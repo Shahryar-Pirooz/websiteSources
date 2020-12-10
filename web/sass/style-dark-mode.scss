@@ -3,10 +3,10 @@
 @import "materialize.scss";
 
 // colors
-$backColor: #bdbdbd;
-$black: #333333;
+$backColor: #121212;
+$black: #000000;
 $green: $primary-color;
-$white: #f2f2f2;
+$white: #ffffff;
 $pink: $secondary-color;
 // change defailt
 
@@ -28,10 +28,10 @@ text: {
   transform: lowercase;
   align: center;
 }
-@if $isgreen == true {
+@if $isgreen {
   color: $green;
 } @else {
-  color: $black;
+  color: $white;
 }
 }
 
@@ -132,17 +132,16 @@ text-align: justify;
 }
 
 i , em {
-  color: $black;
-  &:hover{
-    color: $green;
+color: $white;
+&:hover{
+  color: $green;
+}
+&.moon {
+  &:hover {
+    color:$white;
   }
-  &.moon {
-    color: $green;
-    &:hover {
-      color:$white;
-    }
-  }
-  }
+}
+}
 
 
 //classes
@@ -190,11 +189,13 @@ left: 0;
 
 .myCard{
   @extend .card;
+  background-color: $black;
   @include rfs(4rem, border-radius);
 }
 
 .title {
 @include font-size(10rem);
+color: $white;
 
 text: {
   align: center;
@@ -217,7 +218,7 @@ font: {
 
 .blackImage {
 margin: 5px;
-fill: $black;
+fill:$white;
 &:hover {
   animation: {
     name:blackImage;
@@ -227,12 +228,14 @@ fill: $black;
 }
 }
 
-.heartIcon:hover {
-animation: {
-  name: heartIcon;
-  duration:4s; 
-  fill-mode: forwards;
-}
+.heartIcon {
+  &:hover{
+    animation: {
+      name: heartIcon;
+      duration:4s; 
+      fill-mode: forwards;
+    }
+  }
 }
 
 .colorImages {
@@ -247,11 +250,10 @@ filter: opacity(80%);
 }
 
 .btn-floating, .MY fab {
-  background-color: $white;
+  background-color: black;
 
 &:hover {
   background-color: $green;
 }
 }
-
 ///

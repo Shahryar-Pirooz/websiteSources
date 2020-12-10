@@ -17,14 +17,14 @@
   height: 0;
 
   &:checked + .lever {
-    background-color: $switch-checked-lever-bg;
+    background-color: $primary-color;
 
     &:before, &:after {
       left: 18px;
     }
 
     &:after {
-      background-color: $switch-bg-color;
+      background-color:  #f2f2f2;
     }
   }
 }

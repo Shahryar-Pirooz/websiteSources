@@ -6394,13 +6394,13 @@ textarea.materialize-textarea {
   height: 0;
 }
 .switch label input[type=checkbox]:checked + .lever {
-  background-color: #cb8aaf;
+  background-color: #27ae60;
 }
 .switch label input[type=checkbox]:checked + .lever:before, .switch label input[type=checkbox]:checked + .lever:after {
   left: 18px;
 }
 .switch label input[type=checkbox]:checked + .lever:after {
-  background-color: #AE2775;
+  background-color: #f2f2f2;
 }
 
 .switch label .lever {
@@ -8095,7 +8095,7 @@ input[type=range]::-ms-thumb {
 }
 @keyframes blackImage {
   0% {
-    fill: #333333;
+    fill: #000000;
   }
   100% {
     fill: #27ae60;
@@ -8145,18 +8145,18 @@ input[type=range]::-ms-thumb {
   }
 }
 ::-moz-selection {
-  color: #f2f2f2;
+  color: #ffffff;
   background: #27ae60;
 }
 
 ::selection {
-  color: #f2f2f2;
+  color: #ffffff;
   background: #27ae60;
 }
 
 html,
 body {
-  background-color: #bdbdbd;
+  background-color: #121212;
   scroll-behavior: smooth;
 }
 
@@ -8173,7 +8173,7 @@ ul a {
   font-weight: normal;
   text-transform: lowercase;
   text-align: center;
-  color: #333333;
+  color: #27ae60;
 }
 ul a.mainMenu {
   margin: 10px;
@@ -8196,7 +8196,7 @@ ul a.findMeIcons {
   font-weight: normal;
   text-transform: lowercase;
   text-align: center;
-  color: #333333;
+  color: #ffffff;
   margin-left: 30px;
 }
 @media (min-width: 1200px) {
@@ -8213,7 +8213,7 @@ p {
   font-weight: normal;
   text-transform: lowercase;
   text-align: center;
-  color: #333333;
+  color: #ffffff;
   text-align: justify;
 }
 @media (min-width: 1200px) {
@@ -8223,10 +8223,13 @@ p {
 }
 
 i, em {
-  color: #333333;
+  color: #ffffff;
 }
 i:hover, em:hover {
   color: #27ae60;
+}
+i.moon:hover, em.moon:hover {
+  color: #ffffff;
 }
 
 .myNavul {
@@ -8242,7 +8245,7 @@ i:hover, em:hover {
   font-weight: normal;
   text-transform: lowercase;
   text-align: center;
-  color: #333333;
+  color: #27ae60;
 }
 .myNavul a.mainMenu {
   margin: 10px;
@@ -8255,7 +8258,7 @@ i:hover, em:hover {
   font-weight: normal;
   text-transform: lowercase;
   text-align: center;
-  color: #333333;
+  color: #ffffff;
 }
 
 .myLogo {
@@ -8267,7 +8270,7 @@ i:hover, em:hover {
   margin-bottom: auto;
   height: 100%;
   width: 100%;
-  background-color: #bdbdbd;
+  background-color: #121212;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8293,6 +8296,7 @@ i:hover, em:hover {
 }
 
 .myCard {
+  background-color: #000000;
   border-radius: calc(1.525rem + 3.3vw);
 }
 @media (min-width: 1200px) {
@@ -8303,6 +8307,7 @@ i:hover, em:hover {
 
 .title {
   font-size: calc(2.125rem + 10.5vw);
+  color: #ffffff;
   text-align: center;
   text-transform: capitalize;
   font-family: "Just Another Hand";
@@ -8339,7 +8344,7 @@ i:hover, em:hover {
   font-weight: normal;
   text-transform: lowercase;
   text-align: center;
-  color: #333333;
+  color: #27ae60;
 }
 @media (min-width: 1200px) {
   .developerText {
@@ -8349,7 +8354,7 @@ i:hover, em:hover {
 
 .blackImage {
   margin: 5px;
-  fill: #333333;
+  fill: #ffffff;
 }
 .blackImage:hover {
   animation-name: blackImage;
@@ -8372,4 +8377,11 @@ i:hover, em:hover {
   animation-fill-mode: forwards;
 }
 
-/*# sourceMappingURL=style.css.map */
+.btn-floating, .MY fab {
+  background-color: black;
+}
+.btn-floating:hover, .MY fab:hover {
+  background-color: #27ae60;
+}
+
+/*# sourceMappingURL=style-dark-mode.css.map */
