@@ -38,6 +38,6 @@ void dark(isDark) {
   // var stile = document.head.querySelector('link[href="stile.css"]');
   var style = document.head.querySelector('#style');
   style.attributes['href'] =
-      isDark ? 'css/style-dark-mode.css' : 'css/style.css';
+      isDark ? 'css/style-dark-mode.min.css' : 'css/style.min.css';
   print(style.toString());
 }
