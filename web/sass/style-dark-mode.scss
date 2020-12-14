@@ -214,6 +214,7 @@ font: {
 
 .developerText {
 @include text(flase, 3rem);
+color: $white;
 }
 
 .blackImage {
@@ -255,5 +256,9 @@ filter: opacity(80%);
 &:hover {
   background-color: $green;
 }
+}
+
+.card.hoverable:hover {
+    box-shadow: 2px 4px 5px 0 $green, 2px 5px 3px -3px blue, 2px 5px 10px 0 $green;
 }
 ///

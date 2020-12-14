@@ -8345,6 +8345,7 @@ i.moon:hover, em.moon:hover {
   text-transform: lowercase;
   text-align: center;
   color: #27ae60;
+  color: #ffffff;
 }
 @media (min-width: 1200px) {
   .developerText {
@@ -8382,6 +8383,10 @@ i.moon:hover, em.moon:hover {
 }
 .btn-floating:hover, .MY fab:hover {
   background-color: #27ae60;
+}
+
+.card.hoverable:hover, .hoverable.myCard:hover {
+  box-shadow: 2px 4px 5px 0 #27ae60, 2px 5px 3px -3px blue, 2px 5px 10px 0 #27ae60;
 }
 
 /*# sourceMappingURL=style-dark-mode.css.map */
